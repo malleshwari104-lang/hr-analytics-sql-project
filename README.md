@@ -129,8 +129,6 @@ The dashboard displays the following figures:
 | Total Salary | 8M |
 | Average Salary | 62.13K |
 
-*Salary currency and reporting period should be confirmed before interpreting the salary figures.*
-
 ### Dashboard Visualizations
 
 **1. Total Employees by Department**
