@@ -30,3 +30,9 @@ To demonstrate how SQL can help HR teams understand workforce composition, compe
 
 ## Note
 This project uses fictional practice data. Some records contain intentional data-quality issues for analysis practice.
+
+## Requirements
+
+- **Database:** MySQL 8.0 or later
+- **SQL concepts:** SELECT, WHERE, GROUP BY, HAVING, JOINs, subqueries, CTEs (`WITH`), and window functions such as `DENSE_RANK()`.
+- Import `employees.csv` and `departments.csv` into MySQL before running the queries in `hr_analytics_queries.sql`.
