@@ -1,35 +1,29 @@
-# HR Analytics | SQL & Power BI Project
-
-An end-to-end HR Analytics project using **MySQL and Power BI** to analyze employee data, understand workforce distribution, compare department salaries, and explore hiring and employment trends.
+# HR Analytics Project | SQL & Power BI
 
 ## 📌 Project Overview
 
-This project focuses on analyzing Human Resources (HR) data using SQL queries and an interactive Power BI dashboard.
+The HR Analytics Project uses **MySQL and Microsoft Power BI** to analyze employee data and present meaningful insights about workforce distribution, salary expenditure, hiring trends, and employment status.
 
-The goal is to transform employee data into meaningful insights that help understand workforce distribution, employee status, salary patterns, and hiring trends.
+The project combines SQL-based data analysis with an interactive Power BI dashboard to demonstrate practical Data Analyst skills and support HR decision-making.
 
-The project demonstrates practical skills in SQL data analysis, data visualization, dashboard development, and business reporting.
+## 🎯 Business Objectives
 
-## 🎯 Project Objectives
-
-- Analyze the total number of employees.
-- Identify active and exited employees.
-- Understand employee distribution across departments.
-- Compare total salary across departments.
-- Analyze hiring trends by year.
-- Summarize workforce information using SQL queries.
-- Build an interactive dashboard using Power BI.
-- Present HR data in a clear and understandable format.
+- Analyze total employees and employment status.
+- Identify employee distribution across departments.
+- Compare total and average salaries across departments.
+- Analyze employee hiring trends by year.
+- Identify employees earning above overall and department-level average salaries.
+- Analyze employee attrition rates by department.
+- Explore employee information through interactive dashboard filters.
 
 ## 🛠️ Tools & Technologies
 
-- **MySQL 8.0+** — Database querying and analysis
-- **MySQL Workbench** — SQL query development and execution
-- **Microsoft Power BI** — Interactive dashboard creation
-- **Power Query** — Data transformation, where applicable
-- **DAX** — Measures and calculations, where applicable
-- **CSV** — Dataset storage
-- **GitHub** — Project documentation and version control
+- **MySQL 8.0+** — SQL queries and HR data analysis.
+- **Microsoft Power BI Desktop** — Interactive dashboard development.
+- **DAX** — KPI measures and calculations.
+- **Power Query** — Data preparation and data type validation.
+- **CSV** — Dataset format.
+- **GitHub** — Project documentation and version control.
 
 ## 📂 Project Structure
 
@@ -42,204 +36,242 @@ hr-analytics-sql-project/
 ├── hr_analytics_queries.sql
 ├── HR_Analytics_Dashboard.pbix
 └── hr_dashboard.png
-```
 
-**File descriptions:**
-
-| File | Description |
-|---|---|
-| `README.md` | Project documentation |
-| `employees.csv` | Employee information and related HR data |
-| `departments.csv` | Department information |
-| `hr_analytics_queries.sql` | SQL queries for HR data analysis |
-| `HR_Analytics_Dashboard.pbix` | Power BI dashboard report |
-| `hr_dashboard.png` | Dashboard screenshot for project preview |
-
-*Note: The screenshot filename and report filename above are examples. Make sure they match the actual filenames in your repository.*
+The Power BI report file should be uploaded separately to the repository. A dashboard screenshot is optional.
 
 ## 📊 Dataset Description
 
-The project uses two CSV files.
+The project uses two related tables.
 
-### 1. Employees Dataset
+### 1. Employees
 
-Contains employee-level information used to analyze the workforce.
+| Column | Description |
+|---|---|
+| `employee_id` | Employee identifier |
+| `name` | Employee name |
+| `gender` | Employee gender |
+| `department_id` | Department identifier |
+| `job_title` | Employee job title |
+| `salary` | Employee salary |
+| `hire_date` | Employee hiring date |
+| `manager_id` | Manager's employee identifier |
+| `employment_status` | Employee employment status |
 
-It supports analysis of employee counts, employment status, hiring trends, salary information, and department assignments.
+### 2. Departments
 
-### 2. Departments Dataset
+| Column | Description |
+|---|---|
+| `department_id` | Department identifier |
+| `department_name` | Department name |
 
-Contains department information used to organize employees by department and support department-level analysis.
+**Relationship:** The `department_id` column connects the Employees table to the Departments table. One department can have multiple employees.
 
-The two datasets are connected through the department identifier to support combined analysis.
+*The dataset is fictional and includes intentional data-quality cases for practice.*
 
-## 🧮 SQL Analysis
+## 🗄️ SQL Analysis — 40 Questions
 
-The `hr_analytics_queries.sql` file contains **40 SQL questions** organized around HR and workforce analysis.
+The SQL analysis is organized into four sections, progressing from basic querying to advanced HR analytics.
 
-The project demonstrates the following SQL concepts:
+### Section 1: Basic SQL (Q1–Q10)
 
-- `SELECT` and `WHERE`
-- `ORDER BY`
-- Aggregate functions such as `COUNT()`, `SUM()`, and `AVG()`
-- `GROUP BY` and `HAVING`
-- `INNER JOIN` and `LEFT JOIN`
-- Subqueries
-- Common Table Expressions (CTEs)
-- CASE statements
-- Date-based analysis
-- Window functions, where included in the queries
-- Filtering and sorting
-- Department-wise employee and salary analysis
+- Retrieve employee records.
+- Find unique job titles.
+- Filter employees by salary and job title.
+- Identify employees with missing salaries.
+- Filter employees by department.
+- Use `BETWEEN`, `LIKE`, and `DISTINCT`.
+- Count employee records.
 
-### Business Questions
+### Section 2: Data Quality and Aggregations (Q11–Q20)
 
-The SQL analysis explores questions such as:
+- Identify employees without a department.
+- Check for duplicate employee IDs.
+- Handle missing or unmatched department names in query results.
+- Find zero or negative salaries.
+- Count employees by department.
+- Calculate average, total, minimum, and maximum salaries.
+- Analyze employee counts by job title.
 
-1. How many employees are in the organization?
-2. How many employees are currently active?
-3. How many employees have exited?
-4. How many employees belong to each department?
-5. Which departments have the highest employee counts?
-6. How does total salary vary by department?
-7. What is the average salary?
-8. How many employees were hired each year?
-9. How is the workforce distributed by employment status?
-10. What insights can be obtained from combining employee and department data?
+### Section 3: CASE, Joins, Subqueries and Window Functions (Q21–Q30)
 
-Refer to `hr_analytics_queries.sql` for the complete set of queries.
+- Categorize salaries using `CASE`.
+- Combine employee and department information using `INNER JOIN` and `LEFT JOIN`.
+- Identify employees with unmatched department IDs.
+- Calculate department-level salary averages and employee counts.
+- Find employees earning above the overall average salary.
+- Compare employee salaries with department averages.
+- Rank employees by salary within departments.
+- Identify employees in the top three salary ranks per department.
+
+### Section 4: Advanced HR Analytics (Q31–Q40)
+
+- Compare employee salaries with their managers' salaries.
+- Count employees hired in each year.
+- Find employees hired during the last three years.
+- Count employees hired in 2025 by department.
+- Identify employees without an assigned manager.
+- Find the department with the highest average salary.
+- Identify employees sharing the same salary.
+- Calculate department-level salary comparisons.
+- Calculate attrition rates by department.
+- Identify the three departments with the highest attrition rates.
+
+### SQL Concepts Practiced
+
+`SELECT`, `WHERE`, `ORDER BY`, `DISTINCT`, `LIMIT`, `LIKE`, `BETWEEN`, `IS NULL`, aggregate functions, `GROUP BY`, `HAVING`, `CASE`, `COALESCE`, `INNER JOIN`, `LEFT JOIN`, subqueries, CTEs, date functions, `DENSE_RANK()`, and window functions.
 
 ## 📈 Power BI Dashboard
 
-The Power BI dashboard provides a visual summary of workforce and salary information.
+An interactive HR Analytics dashboard was developed using the same employee and department dataset.
 
-### Dashboard Preview
+### KPI Cards
 
-![HR Analytics Dashboard](hr_dashboard.png)
+The dashboard displays five key metrics:
 
-### Key Performance Indicators (KPIs)
-
-The dashboard displays the following figures:
-
-| KPI | Value |
-|---|---:|
-| Total Employees | 120 |
-| Active Employees | 97 |
-| Exited Employees | 23 |
-| Total Salary | 8M |
-| Average Salary | 62.13K |
+1. **Total Employees** — Unique employee count.
+2. **Active Employees** — Number of employees with Active status.
+3. **Total Exited Employees** — Number of employees with Exited status.
+4. **Total Salary** — Sum of employee salary values.
+5. **Average Salary** — Average employee salary.
 
 ### Dashboard Visualizations
 
-**1. Total Employees by Department**
+**1. Employee Count by Department**
 
-Shows the distribution of employees across departments.
+Compares workforce size across departments to identify differences in department staffing.
 
 **2. Total Salary by Department**
 
-Compares total salary across departments to help understand department-level compensation totals.
+Compares total salary expenditure across departments.
 
-**3. Total Employees by Year**
+**3. Employees Hired by Year**
 
-Displays the yearly hiring trend and helps identify changes in employee recruitment over time.
+Shows hiring trends over time using the `hire_date` column.
 
-**4. Employees by Employment Status**
+**4. Employee Employment Status**
 
-Compares active employees with employees who have exited.
+Displays the distribution of employees by employment status, including Active and Exited employees.
 
-**5. Department Summary**
+**5. Employee Details Page**
 
-Presents total employees, active employees, and exited employees for each department.
+A separate report page displays employee-level information, including employee ID, name, department, job title, employment status, salary, and hire date.
 
-**6. Interactive Filters**
+### Interactive Features
 
-The dashboard includes filters for:
+The report includes slicers for:
 
 - Department
 - Employment Status
 - Year
 
-These filters allow users to explore the workforce data from different perspectives.
+These slicers allow users to filter the dashboard and explore employee data interactively.
 
-## 🔍 Key Findings
+## 🧮 DAX Measures
 
-Based on the current dashboard:
+DAX measures are used to calculate key HR metrics and support the dashboard visuals.
 
-- The dataset contains **120 employees**.
-- **97 employees are active**, while **23 employees have exited**.
-- Active employees represent approximately **80.8%** of the total workforce.
-- Exited employees represent approximately **19.2%** of the total workforce.
-- The dashboard compares employee distribution and salary totals across departments.
-- The yearly hiring chart provides a view of recruitment trends over time.
+Measures include:
 
-These findings describe the current dashboard figures and should not be interpreted as explanations for employee exits or salary differences without further analysis.
+- Total Employees
+- Active Employees
+- Total Exited Employees
+- Active Employees Percentage
+- Attrition Rate
+- Total Salary
+- Average Salary
+- Employees Hired by Year
+- Department-wise Employee Count
+- Department-wise Total Salary
+- Department-wise Average Salary
 
-## 💡 Business Value
+These measures support KPI cards, department comparisons, and employment status analysis. The measures included in the report should match the actual DAX calculations used in the Power BI file.
 
-This project demonstrates how SQL and Power BI can be used together to support HR reporting and workforce analysis.
+## 📚 Power BI Concepts Practiced
+
+### Data Modeling and Relationships
+
+- Connecting the Employees and Departments tables using `department_id`.
+- Understanding one-to-many relationships.
+- Using related tables to display department names alongside employee information.
+
+### Power Query and Data Preparation
+
+- Importing CSV datasets into Power BI.
+- Checking column data types.
+- Preparing data for reporting and analysis.
+
+### DAX and KPI Calculations
+
+- Using `DISTINCTCOUNT()` to calculate unique employees.
+- Using `SUM()` to calculate total salary.
+- Using `AVERAGE()` to calculate average salary.
+- Using `CALCULATE()` to filter employee metrics by employment status.
+- Using `DIVIDE()` to calculate percentages and ratios.
+
+### Data Visualization
+
+- Creating KPI cards for important HR metrics.
+- Building bar charts to compare employee counts and salary expenditure by department.
+- Creating a hiring trend chart by year.
+- Using a donut chart to analyze employee employment status.
+- Creating an employee details table for record-level analysis.
+
+### Interactive Dashboard Design
+
+- Adding slicers for Department, Employment Status, and Year.
+- Exploring how slicers affect dashboard visuals.
+- Organizing report pages for summary-level and employee-level analysis.
+- Formatting charts, cards, labels, and titles for readability.
+
+### Dashboard Validation
+
+- Checking KPI totals against employee records.
+- Verifying employee counts for consistency.
+- Checking that visualizations and filters reflect the intended data.
+
+## 💼 Business Value
+
+This project demonstrates how SQL and Power BI can be used together to turn employee records into useful HR insights.
 
 The analysis can help HR teams:
 
 - Monitor workforce size and employment status.
-- Understand employee distribution across departments.
-- Compare department-level salary totals.
-- Review hiring trends.
-- Explore workforce information through interactive filters.
-- Present HR data through a consolidated dashboard.
+- Compare employee distribution across departments.
+- Understand departmental salary expenditure.
+- Track hiring patterns over time.
+- Identify departments with higher attrition rates.
+- Explore employee records using interactive filters.
 
-## 🚀 How to Use This Project
+## 📚 Key Learnings
 
-### Step 1: Download the Repository
+Based on the current dashboard:
 
-Clone the repository or download it as a ZIP file.
+- The dataset contains 120 employees.
 
-```bash
-git clone https://github.com/malleshwari104-lang/hr-analytics-sql-project.git
-```
+- 97 employees are active, while 23 employees have exited.
 
-### Step 2: Open the SQL File
+- Active employees represent approximately 80.8% of the total workforce.
 
-Open `hr_analytics_queries.sql` using MySQL Workbench or another compatible SQL editor.
+- Exited employees represent approximately 19.2% of the total workforce.
 
-Import the CSV files into MySQL and create or select the appropriate database and tables before running queries.
+- The dashboard compares employee distribution and salary totals across departments.
 
-Make sure the table names and column names in the SQL queries match your database schema.
+- The yearly hiring chart provides a view of recruitment trends over time.
 
-### Step 3: Execute the Queries
 
-Run the SQL queries to explore employee counts, employment status, salary information, department distribution, and hiring trends.
+## 👩‍💻 Project Summary
 
-### Step 4: Open the Power BI Report
+**Project:** HR Analytics  
+**Tools:** MySQL, Microsoft Power BI, DAX, Power Query  
+**SQL Practice:** 40 questions  
+**Domain:** Human Resources Analytics  
+**Focus:** Employee distribution, salary analysis, hiring trends, employment status, and attrition analysis.
 
-Open `HR_Analytics_Dashboard.pbix` in Microsoft Power BI Desktop.
+This portfolio project demonstrates practical skills in SQL querying, data analysis, DAX calculations, data modeling, and interactive Power BI reporting.
 
-If prompted, configure the data source paths and refresh the data.
+## 📥 Power BI Report
 
-### Step 5: Explore the Dashboard
+**Report file:** `HR_Analytics_Dashboard.pbix`
 
-Use the Department, Employment Status, and Year filters to interact with the report and examine the workforce information.
+Download the Power BI report from this repository and open it using Power BI Desktop to explore the dashboard.
 
-## 📚 Skills Demonstrated
-
-- SQL querying and data analysis
-- Data aggregation and filtering
-- Table joins and relational data analysis
-- HR and workforce analytics
-- Data visualization
-- Power BI dashboard development
-- KPI reporting
-- Business problem-solving
-- Data presentation and documentation
-- GitHub project management
-
-## 📌 Conclusion
-
-The HR Analytics SQL & Power BI project demonstrates the process of analyzing employee data using SQL and presenting key workforce metrics through an interactive Power BI dashboard.
-
-By combining SQL queries with data visualization, the project provides a practical example of how data analytics can support HR reporting and business understanding.
-
----
-
-**Project Type:** Data Analytics Portfolio Project  
-**Domain:** Human Resources (HR Analytics)  
-**Tools:** MySQL, SQL, Power BI, GitHub
