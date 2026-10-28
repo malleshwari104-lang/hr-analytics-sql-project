@@ -240,5 +240,8 @@ The HR Analytics dashboard provides insights into employee headcount, salary dis
 - Year
 
 **Power BI Report:** `HR_Analytics_Dashboard.pbix`
+## Power BI Dashboard
+
+![HR Analytics Dashboard](hr_dashboard.png)
 
 This portfolio project demonstrates practical skills in SQL querying, data analysis, DAX calculations, and interactive Power BI reporting.
