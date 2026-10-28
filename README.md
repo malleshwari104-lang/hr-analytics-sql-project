@@ -29,12 +29,11 @@ The project combines SQL-based data analysis with an interactive Power BI dashbo
 ```text
 HR-Analytics-SQL-Project/
 │
+├── README.md
 ├── employees.csv
 ├── departments.csv
 ├── hr_analytics_queries.sql
-├── README.md
-└── hr_dashboard.png        (optional)
-```
+├── HR_Analytics_Dashboard.pbix
 
 The dashboard image is optional. The Power BI report file (`.pbix`) can also be uploaded to the repository.
 
