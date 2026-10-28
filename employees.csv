@@ -1,0 +1,122 @@
+employee_id,name,gender,department_id,job_title,salary,hire_date,manager_id,employment_status
+1,Kavya Kumar,Male,1.0,HR Analyst,47000,2018-02-02,,Active
+2,Saanvi Gupta,Non-binary,2.0,Payroll Specialist,60000,2019-03-03,1.0,Active
+3,Bhavya Verma,Female,3.0,IT Support Analyst,83000,2020-04-04,1.0,Active
+4,Jay Joshi,Male,4.0,Account Manager,65000,2021-05-05,1.0,Active
+5,Qadir Bose,Non-binary,5.0,Marketing Executive,69000,2022-06-06,1.0,Active
+6,Anika Kulkarni,Female,6.0,Team Lead,77000,2023-07-07,1.0,Active
+7,Nikhil Patel,Male,7.0,Customer Support Associate,35000,2024-08-08,1.0,Active
+8,Varun Singh,Non-binary,8.0,Research Analyst,67000,2025-09-09,7.0,Exited
+9,Farhan Iyer,Female,9.0,Legal Associate,50000,2026-10-10,7.0,Active
+10,Manoj Joshi,Male,10.0,Office Manager,53000,2017-11-11,7.0,Active
+11,Tarun Chowdhury,Non-binary,11.0,BI Analyst,78000,2018-12-12,7.0,Active
+12,Kavya Desai,Female,1.0,HR Analyst,67000,2019-01-13,7.0,Active
+13,Saanvi Reddy,Male,2.0,Payroll Specialist,80000,2020-02-14,7.0,Exited
+14,Bhavya Rao,Non-binary,3.0,Software Engineer,68000,2021-03-15,7.0,Active
+15,Ira Iyer,Female,4.0,Account Manager,50000,2022-04-16,7.0,Active
+16,Qadir Mehta,Male,5.0,Marketing Executive,54000,2023-05-17,15.0,Exited
+17,Anika Mishra,Non-binary,6.0,Operations Analyst,62000,2024-06-18,,Active
+18,Nikhil Pillai,Female,7.0,Customer Support Associate,50000,2025-07-19,15.0,Active
+19,Sneha Sharma,Male,,Research Analyst,87000,2026-08-20,15.0,Active
+20,Farhan Rao,Non-binary,9.0,Legal Counsel,100000,2017-09-21,15.0,Active
+21,Manoj Nair,Female,10.0,Office Manager,38000,2018-10-22,15.0,Active
+22,Tarun Das,Male,11.0,Junior Data Analyst,63000,2019-11-23,15.0,Active
+23,Ishaan Kapoor,Non-binary,1.0,HR Executive,52000,2020-12-24,15.0,Active
+24,Saanvi Bose,Female,2.0,Payroll Specialist,65000,2021-01-25,23.0,Exited
+25,Bhavya Sharma,Male,3.0,Software Engineer,88000,2022-02-26,23.0,Active
+26,Ira Kumar,Non-binary,4.0,Sales Analyst,70000,2023-03-27,23.0,Exited
+27,Pallavi Gupta,Female,5.0,Marketing Executive,50000,2024-04-01,23.0,Active
+28,Anika Verma,Male,6.0,Operations Analyst,47000,2025-05-02,23.0,Active
+29,Nikhil Joshi,Non-binary,7.0,Support Team Lead,40000,2026-06-03,23.0,Active
+30,Sneha Bose,Female,8.0,Research Analyst,72000,2017-07-04,23.0,Active
+31,Esha Kulkarni,Male,9.0,Legal Counsel,85000,2018-08-05,23.0,Active
+32,Manoj Patel,Non-binary,10.0,Administrative Assistant,58000,2019-09-06,31.0,Exited
+33,Tarun Singh,Female,11.0,Data Analyst,83000,2020-10-07,31.0,Active
+34,Ishaan Iyer,Male,1.0,HR Executive,72000,2021-11-08,,Active
+35,Riya Joshi,Non-binary,2.0,Finance Analyst,50000,2022-12-09,31.0,Active
+36,Bhavya Chowdhury,Female,3.0,Software Engineer,50000,2023-01-10,31.0,Active
+37,Ira Desai,Male,4.0,Sales Analyst,0,2024-02-11,31.0,Active
+38,Pallavi Reddy,Non-binary,5.0,Content Specialist,59000,2025-03-12,31.0,Active
+39,Aditya Rao,Female,6.0,Operations Analyst,67000,2026-04-13,31.0,Exited
+40,Nikhil Iyer,Male,7.0,Support Team Lead,60000,2017-05-14,39.0,Exited
+41,Sneha Mehta,Non-binary,8.0,Research Associate,92000,2018-06-15,39.0,Active
+42,Esha Mishra,Female,9.0,Legal Counsel,70000,2019-07-16,39.0,Active
+43,Lakshmi Pillai,Male,10.0,Administrative Assistant,43000,2020-08-17,39.0,Active
+44,Tarun Sharma,Non-binary,11.0,BI Analyst,68000,2021-09-18,39.0,Active
+45,Ishaan Rao,Female,1.0,HR Executive,50000,2022-10-19,39.0,Active
+46,Riya Nair,Male,2.0,Finance Analyst,70000,2023-11-20,39.0,Active
+47,Abhay Das,Non-binary,3.0,Systems Administrator,93000,2024-12-21,39.0,Active
+48,Ira Kapoor,Female,4.0,Sales Analyst,75000,2025-01-22,47.0,Exited
+49,Pallavi Bose,Male,5.0,Content Specialist,44000,2026-02-23,47.0,Active
+50,Aditya Sharma,Non-binary,6.0,Operations Executive,52000,2017-03-24,47.0,Active
+51,Meera Kumar,Female,7.0,Support Team Lead,45000,2018-04-25,,Active
+52,Sneha Gupta,Male,8.0,Research Associate,77000,2019-05-26,47.0,Exited
+53,Esha Verma,Non-binary,9.0,Compliance Analyst,90000,2020-06-27,47.0,Active
+54,Lakshmi Joshi,Female,10.0,Administrative Assistant,50000,2021-07-01,47.0,Active
+55,Shreya Bose,Male,11.0,Junior Data Analyst,88000,2022-08-02,47.0,Active
+56,Ishaan Kulkarni,Non-binary,1.0,Recruiter,42000,2023-09-03,55.0,Exited
+57,Riya Patel,Female,2.0,Finance Analyst,55000,2024-10-04,55.0,Active
+58,Abhay Singh,Male,3.0,Systems Administrator,78000,2025-11-05,55.0,Active
+59,Harini Iyer,Non-binary,4.0,Sales Executive,60000,2026-12-06,55.0,Active
+60,Pallavi Joshi,Female,5.0,Content Specialist,64000,2017-01-07,55.0,Active
+61,Aditya Chowdhury,Male,6.0,Operations Executive,72000,2018-02-08,55.0,Active
+62,Meera Desai,Non-binary,7.0,Support Analyst,65000,2019-03-09,55.0,Active
+63,Sanjay Reddy,Female,8.0,Research Associate,50000,2020-04-10,55.0,Active
+64,Esha Rao,Male,9.0,Compliance Analyst,75000,2021-05-11,63.0,Exited
+65,Lakshmi Iyer,Non-binary,10.0,Coordinator,48000,2022-06-12,63.0,Exited
+66,Shreya Mehta,Female,11.0,Data Analyst,73000,2023-07-13,63.0,Active
+67,Diya Mishra,Male,1.0,Recruiter,62000,2024-08-14,63.0,Active
+68,Riya Pillai,Non-binary,2.0,Accountant,75000,2025-09-15,,Active
+69,Abhay Sharma,Female,3.0,Systems Administrator,98000,2026-10-16,63.0,Active
+70,Harini Rao,Male,4.0,Sales Executive,45000,2017-11-17,63.0,Active
+71,Om Nair,Non-binary,5.0,Digital Marketing Analyst,49000,2018-12-18,63.0,Active
+72,Aditya Das,Female,6.0,Operations Executive,50000,2019-01-19,71.0,Exited
+73,Meera Kapoor,Male,,Support Analyst,50000,2020-02-20,71.0,Active
+74,Sanjay Bose,Non-binary,8.0,Scientist,0,2021-03-21,71.0,Active
+75,Deepa Sharma,Female,9.0,Compliance Analyst,95000,2022-04-22,71.0,Active
+76,Lakshmi Kumar,Male,10.0,Coordinator,68000,2023-05-23,71.0,Active
+77,Shreya Gupta,Non-binary,11.0,BI Analyst,58000,2024-06-24,71.0,Active
+78,Diya Verma,Female,1.0,Recruiter,47000,2025-07-25,71.0,Exited
+79,Rahul Joshi,Male,2.0,Accountant,60000,2026-08-26,71.0,Active
+80,Abhay Bose,Non-binary,3.0,IT Support Analyst,83000,2017-09-27,79.0,Exited
+81,Harini Kulkarni,Female,4.0,Sales Executive,50000,2018-10-01,79.0,Active
+82,Om Patel,Male,5.0,Digital Marketing Analyst,69000,2019-11-02,79.0,Active
+83,Aanya Singh,Non-binary,6.0,Team Lead,77000,2020-12-03,79.0,Active
+84,Meera Iyer,Female,7.0,Support Analyst,35000,2021-01-04,79.0,Active
+85,Sanjay Joshi,Male,8.0,Scientist,67000,2022-02-05,,Active
+86,Deepa Chowdhury,Non-binary,9.0,Legal Associate,80000,2023-03-06,79.0,Active
+87,Kiran Desai,Female,10.0,Coordinator,53000,2024-04-07,79.0,Active
+88,Shreya Reddy,Male,11.0,Junior Data Analyst,78000,2025-05-08,87.0,Exited
+89,Diya Rao,Non-binary,1.0,HR Analyst,67000,2026-06-09,87.0,Active
+90,Rahul Iyer,Female,2.0,Accountant,50000,2017-07-10,87.0,Active
+91,Zara Mehta,Male,3.0,IT Support Analyst,68000,2018-08-11,87.0,Exited
+92,Harini Mishra,Non-binary,4.0,Account Manager,50000,2019-09-12,87.0,Active
+93,Om Pillai,Female,5.0,Digital Marketing Analyst,54000,2020-10-13,87.0,Active
+94,Aanya Sharma,Male,6.0,Team Lead,62000,2021-11-14,87.0,Active
+95,Krishna Rao,Non-binary,7.0,Customer Support Associate,55000,2022-12-15,87.0,Active
+96,Sanjay Nair,Female,8.0,Scientist,87000,2023-01-16,95.0,Exited
+97,Deepa Das,Male,9.0,Legal Associate,100000,2024-02-17,95.0,Active
+98,Kiran Kapoor,Non-binary,10.0,Office Manager,38000,2025-03-18,95.0,Active
+99,Rohan Bose,Female,11.0,Data Analyst,50000,2026-04-19,95.0,Active
+100,Diya Sharma,Male,1.0,HR Analyst,52000,2017-05-20,95.0,Active
+101,Rahul Kumar,Non-binary,2.0,Payroll Specialist,65000,2018-06-21,95.0,Active
+102,Zara Gupta,Female,3.0,IT Support Analyst,88000,2019-07-22,,Active
+103,Gautam Verma,Male,4.0,Account Manager,70000,2020-08-23,95.0,Active
+104,Om Joshi,Non-binary,5.0,Marketing Executive,74000,2021-09-24,103.0,Exited
+105,Aanya Bose,Female,6.0,Team Lead,47000,2022-10-25,103.0,Active
+106,Krishna Kulkarni,Male,7.0,Customer Support Associate,40000,2023-11-26,103.0,Active
+107,Sai Patel,Non-binary,8.0,Research Analyst,72000,2024-12-27,103.0,Active
+108,Deepa Singh,Female,9.0,Legal Associate,50000,2025-01-01,103.0,Active
+109,Kiran Iyer,Male,10.0,Office Manager,58000,2026-02-02,103.0,Active
+110,Rohan Joshi,Non-binary,11.0,BI Analyst,83000,2017-03-03,103.0,Active
+111,Arjun Chowdhury,Female,1.0,HR Analyst,0,2018-04-04,103.0,Active
+112,Rahul Desai,Male,2.0,Payroll Specialist,50000,2019-05-05,111.0,Exited
+113,Zara Reddy,Non-binary,3.0,Software Engineer,73000,2020-06-06,111.0,Active
+114,Gautam Rao,Female,4.0,Account Manager,55000,2021-07-07,111.0,Active
+115,Nandini Iyer,Male,5.0,Marketing Executive,59000,2022-08-08,111.0,Active
+116,Aanya Mehta,Non-binary,6.0,Operations Analyst,67000,2023-09-09,111.0,Active
+117,Krishna Mishra,Female,7.0,Customer Support Associate,50000,2024-10-10,111.0,Exited
+118,Sai Pillai,Male,8.0,Research Analyst,92000,2025-11-11,111.0,Active
+119,Charan Sharma,Non-binary,9.0,Legal Counsel,70000,2026-12-12,,Active
+120,Kiran Rao,Female,10.0,Office Manager,43000,2017-01-13,119.0,Exited
+42,Duplicate ID Practice Record,Female,9.0,Legal Counsel,70000,2019-07-16,39.0,Active
